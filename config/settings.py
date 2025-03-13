@@ -81,11 +81,14 @@ CACHES = {
     }
 }
 
-# Database Configuration
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "jwt",
+        "USER": "postgres",
+        "PASSWORD": "Ajith@2024",
+        "HOST": "localhost",  # Change this if your DB is on a different server
+        "PORT": "5432",  # Default PostgreSQL port
     }
 }
 
